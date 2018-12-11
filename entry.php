@@ -1,0 +1,4 @@
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>><div class="contentBox"><?phpif(is_category() || is_archive() || is_home() ){	$title = get_the_title();	$permalink = get_the_permalink();	echo '<h2><a href="'.$permalink.'">'.$title.'</a></h2>';		// get the date	$date = get_the_date();		echo '<div class="smallText greyText">Posted '. $date.'</div>';;			}?>
+<?php get_template_part( 'entry', ( is_front_page() || is_home() || is_front_page() && is_home() || is_archive() || is_search() ? 'summary' : 'content' ) ); ?>
+<?php if ( is_singular() ) get_template_part( 'entry-footer' ); ?><hr/></div>
+</article>

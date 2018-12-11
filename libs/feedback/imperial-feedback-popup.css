@@ -1,0 +1,91 @@
+.imperialFeedbackButton
+{
+	margin:0px 0px 6px 0px;
+    margin: 0px 0px 6px 0px;
+    position: absolute;
+    right: 15px;
+    bottom: 14px;	
+}
+
+.imperialFeedbackButton button
+{
+
+	border:1px solid #ccc;
+	border-radius:5px;
+	padding:9px;
+	background:#336699;
+	color:#ccc;
+}
+
+.imperialFeedbackButton button:hover
+{
+	cursor:pointer;
+	color:#fff;	
+}
+
+
+/* feedback content popup */
+.imperial-feedback-popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.imperial-feedback-content-wrap
+{
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+	max-width:500px;
+	
+	
+}
+
+#imperial-feedback-content{
+	color:#565656;
+}
+
+/* The Close Button */
+.imperial-feedback-close {
+
+	color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background: #ed7d74;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+    line-height: 15px;
+}
+
+
+
+.imperial-feedback-close:hover,
+.imperial-feedback-close:focus {
+    color: fff;
+    text-decoration: none;
+    cursor: pointer;
+	background:#9e121e;
+}
+
+
+textarea#my-imperial-feedback
+{
+	margin:20px;
+	border:1px solid #336699;
+	padding:5px;
+	width:400px;
+	height:100px;
+	border-radius:5px;
+}

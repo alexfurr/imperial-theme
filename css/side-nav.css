@@ -1,0 +1,326 @@
+/* Side Nav with chevrons and flyout */
+.grid-wrapper {
+	position:   relative;
+    display: flex;
+	flex: 1;
+	flex-flow: row;
+}
+.grid-content {
+	flex:       auto;
+	padding-left:30px;
+	padding-top:10px;
+}
+.grid-sidebar {
+	width:          250px;
+	border-right:   1px solid #ccc;
+	min-height:     100vh;
+	transition:     width 250ms ease-in-out;
+}
+
+
+.grid-sidebar .gridNav {
+	box-sizing:     border-box;
+	/*border-right:   1px solid #ccc;*/
+	/*min-height:     100vh;*/
+	width:          100%;
+	width:          249px;
+	/*order:          1;
+	flex:           1;	*/
+	background:#fcfcfc;
+}
+
+
+
+
+
+.nav-toggle-wrap {
+    display:        none;
+    box-sizing:     border-box;
+    width: 54px;
+    position: absolute;
+    right: -53px;
+    top: 0px;
+}
+#nav_toggle_button {
+    font-size:  26px;
+    border: 1px solid #ccc;
+    border-bottom-right-radius:  4px;
+    box-sizing:     border-box;
+    padding: 8px 0px 7px 21px;
+    background: #455060;
+    color:      #fff;
+    cursor:     pointer;
+}
+
+
+
+
+
+
+
+/* CSS for left side vertical UL tab style navigation */
+.imperial-vert-tabs-menu ol, .imperial-vert-tabs-menu ul
+{
+	padding:0px;	
+}
+
+.imperial-vert-tabs-menu .hidden
+{
+	display:none;
+	
+}
+
+
+
+
+.imperial-vert-tabs-menu .linkText
+{
+	
+	
+	width:180px;
+	float:left;
+	padding-left:10px;
+	
+}
+
+
+
+.imperial-vert-tabs-menu ul li, .imperial-vert-tabs-menu ol li
+{
+	border-bottom:1px solid #f4f4f4;
+	transition: all 0.1s ease-in-out;
+	color:#a5a5a5;
+	list-style:none !important;
+}
+
+
+
+/* OL types - lesson navs */
+.imperial-vert-tabs-menu ol li
+{
+	/*padding:17px 10px 17px 0px;*/
+	font-size:13px;
+    padding: 0;
+}
+
+
+.imperial-vert-tabs-menu ul li:hover, .imperial-vert-tabs-menu ol li:hover
+{
+	color:#000;
+	cursor:pointer;	
+}
+
+
+.imperial-vert-tabs-menu ol li:hover
+{
+	padding-left:7px;
+}
+
+.imperial-vert-tabs-menu .activeTab
+{
+	font-weight:bold;
+	background: #fff !important;
+    color: #000 !important;
+	padding-left:7px; /* Has to be the same as the hover above */
+}
+
+
+
+
+
+/* CSS for left side vertical UL tab style navigation */
+.imperial-vert-tabs-menu ul li
+{
+	padding:20px;
+}
+        
+
+
+.imperial-vert-tabs-menu ul li:hover
+{
+	padding-left:20px;
+}
+
+.imperial-vert-tabs-menu ul li.activeTab
+{
+	font-weight:bold;
+	padding-left:35px;
+}
+
+
+.grid-sidebar a{
+	color:#a5a5a5;
+    padding: 17px 10px 17px 0px;
+    display: flex;
+	align-items:center;
+}	
+	
+	
+
+
+/* Nav Chevrons */
+.imperial-vert-tabs-menu .fa-chevron-right
+{
+	float:right;
+	color:#e8e8e8;
+}
+
+.activeTab  .fa-chevron-right
+{
+	display:block;
+	color:#000;
+}
+
+.grid-sidebar .imperial-vert-tabs-menu ol li.activeTab {
+    
+	padding-left:20px;
+}
+
+.grid-sidebar .imperial-vert-tabs-menu .activeTab a{
+	color:#000;
+}
+
+
+.grid-sidebar .status
+{
+	float:right;
+}
+
+.grid-sidebar
+{
+	
+}
+
+
+
+
+/* Nav Chevrons */
+.imperial-vert-tabs-menu .fa-chevron-right
+{
+	float:right;
+	color:#e8e8e8;
+}
+
+.activeTab  .fa-chevron-right
+{
+	display:block;
+	color:#000;
+}
+
+.editPageButton
+{
+	margin-left:30px;
+}
+
+
+
+
+
+@media only screen and ( min-width: 1230px ) and ( max-width: 1499px ) {
+    
+}
+@media only screen and ( min-width: 960px ) and ( max-width: 1229px ) {
+    
+}
+@media only screen and ( min-width: 768px ) and ( max-width: 959px ) {
+    
+}
+@media only screen and ( min-width: 611px ) and ( max-width: 767px ) {
+}
+@media only screen and ( max-width: 610px ) {
+    
+}
+
+
+
+
+
+.mobile-only {
+    display:    none;
+}
+.desktop-only {
+    display:    inherit;
+}
+
+@media only screen and ( max-width: 767px ) {
+    .mobile-only {
+        display:    inherit;
+    }
+    .desktop-only {
+        display:    none;
+    }
+}
+
+
+@media only screen and ( max-width: 767px ) {
+    
+    h1 {
+        padding-left:65px;
+        padding-bottom:6px;
+        margin:10px 0px 0px 0px !important;
+    }
+    
+    .grid-wrapper {
+        position:       relative;
+        display:        block;
+        flex:           none;
+        flex-flow:      row;
+    }
+    .grid-content {
+        flex:           none;
+        box-sizing:     border-box;
+        width:          100%;
+        padding-left:   35px;
+    }
+    
+    .grid-sidebar {
+        width:          0px;
+        
+        display:        block;
+        position:       absolute;
+        /*width:          80%;
+        max-width:      250px;*/
+        background:     rgba(255,255,255,0.9);
+        box-shadow: 1px 1px 4px 0px #00000033;
+        border-right:   1px solid #a7a7a7;
+    }
+    .grid-sidebar .gridNav {
+        position:       absolute;
+        width:          250px;
+        display:        block;
+        top:            0px;
+        right:          0;
+    }
+    .nav-toggle-wrap {
+        display:    block;
+    }
+    
+    .grid-sidebar.mobile-mode-wide {
+        width:  250px;
+    }
+    
+    
+}
+
+/* tab port - make sidenav toggle */
+/* iPad (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.grid-sidebar {
+		width: 0px;
+		position: absolute;
+	}
+		.grid-sidebar.mobile-mode-wide {
+		width: 250px;
+	}
+		.nav-toggle-wrap {
+		display: block;
+	}
+		.grid-sidebar .gridNav {
+		position: absolute;
+		width: 250px;
+		display: block;
+		top: 0;
+		right: 0;
+	}
+}
+
