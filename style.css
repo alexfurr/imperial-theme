@@ -257,7 +257,24 @@ table{width:100%;margin:30px 0}
 }
 
 
+/**** BLOG POSTS ****/
 
+
+.post-date {
+ font-size: 12px;
+}
+
+.post-author {
+    font-weight: 600;
+    font-size: 14px;
+
+}
+
+.post-title {
+
+	color: #900c3f;
+	margin: 0 0 5px 0;
+}
 
 /* Menu Nav */
 #menu{
